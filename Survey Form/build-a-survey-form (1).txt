@@ -1,0 +1,158 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Survey Form</title>
+</head>
+<body>
+  <div class="container">
+      <h1 id="title">Survey Form</h1>
+      <p id="description">Please fill out the survey form below:</p>
+      <form id="survey-form">
+        <label for="name" id="name-label">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+        <label for="email" id="email-label">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <label for="number" id="number-label">Number:</label>
+        <input type="number" id="number" name="number" placeholder="Enter a number" min="1" max="100" required>
+
+        <label for="dropdown">Select an option:</label>
+        <select id="dropdown" name="dropdown" required>
+          <option value="option1">Option 1</option>
+          <option value="option2">Option 2</option>
+        </select>
+
+        <fieldset>
+          <legend>Choose an option:</legend>
+          <input type="radio" id="option1" name="options" value="option1" required>
+          <label for="option1">Option 1</label>
+
+          <input type="radio" id="option2" name="options" value="option2">
+          <label for="option2">Option 2</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Select all that apply:</legend>
+          <input type="checkbox" id="checkbox1" name="checkbox" value="checkbox1">
+          <label for="checkbox1">Checkbox 1</label>
+
+          <input type="checkbox" id="checkbox2" name="checkbox" value="checkbox2">
+          <label for="checkbox2">Checkbox 2</label>
+        </fieldset>
+
+        <label for="comments">Additional Comments:</label>
+        <textarea id="comments" name="comments" placeholder="Enter your comments"></textarea>
+
+        <button type="submit" id="submit">Submit</button>
+      </form>
+  </div>
+</body>
+</html>
+
+
+** end of undefined **
+
+** start of undefined **
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto; /* Adjust margin to center the container */
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+p {
+  color: #666;
+}
+
+form {
+  margin-top: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: #66afe9;
+}
+
+button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+fieldset {
+  margin-bottom: 10px;
+}
+
+legend {
+  font-weight: bold;
+  color: #333;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+@media (max-width: 768px) {
+  .container {
+    margin: 20px; /* Adjust margin for smaller screens */
+  }
+}
+
+
+** end of undefined **
+

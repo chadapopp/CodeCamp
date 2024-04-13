@@ -1,0 +1,151 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Documentation Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav id="navbar">
+        <header>Technical Documentation</header>
+        <ul>
+            <li><a class="nav-link" href="#HTML_and_CSS">HTML and CSS</a></li>
+            <li><a class="nav-link" href="#JavaScript">JavaScript</a></li>
+            <li><a class="nav-link" href="#Python">Python</a></li>
+            <li><a class="nav-link" href="#Java">Java</a></li>
+            <li><a class="nav-link" href="#C++">C++</a></li>
+        </ul>
+    </nav>
+
+    <main id="main-doc">
+      <section id="HTML_and_CSS" class="main-section">
+          <header>HTML and CSS</header>
+          <p>Nam vestibulum ligula nec elit suscipit suscipit.</p>
+          <p>Integer ut mauris et risus iaculis posuere.</p>
+          <p>Praesent non enim vel nisi efficitur tincidunt.</p>
+          <code>Example code 1</code>
+          <code>Example code 2</code>
+          <code>Example code 3</code>
+          <code>Example code 4</code>
+          <code>Example code 5</code>
+          <li>List item 1</li>
+          <li>List item 2</li>
+          <li>List item 3</li>
+          <li>List item 4</li>
+          <li>List item 5</li>
+      </section>
+
+        <section id="JavaScript" class="main-section">
+            <header>JavaScript</header>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus euismod quam at massa commodo, ut rhoncus ligula dictum.</p>
+          <p>Nullam at mi ut justo tempor dictum.</p>
+          <p>Vivamus id lectus volutpat, volutpat turpis vitae, tincidunt felis.</p>
+        </section>
+
+        <section id="Python" class="main-section">
+            <header>Python</header>
+             <p>Curabitur eu tellus quis risus condimentum vulputate.</p>
+          <p>Quisque feugiat lacus nec odio feugiat, ac aliquet dolor ullamcorper.</p>
+        </section>
+
+        <section id="Java" class="main-section">
+            <header>Java</header>
+            <p>Donec fermentum orci ac tellus malesuada, nec fringilla nunc dictum.</p>
+          <p>Proin rutrum velit vel nulla condimentum, a vestibulum nisl fringilla.</p>
+        </section>
+
+        <section id="C++" class="main-section">
+            <header>C++</header>
+            <!-- Content for C++ section -->
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+** end of undefined **
+
+** start of undefined **
+
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#navbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 200px; /* Adjust as needed */
+    height: 100%;
+    background-color: #333;
+    color: #fff;
+}
+
+#navbar header {
+    padding: 20px;
+    font-size: 1.2em;
+}
+
+#navbar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#navbar ul li {
+    padding: 10px 0;
+}
+
+#navbar ul li a {
+    display: block;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    background-color: #555;
+}
+
+.main-section {
+    margin-left: 220px; /* Adjust to match width of navbar */
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    #navbar {
+        width: 100%;
+        height: auto;
+        position: static;
+    }
+
+    #navbar ul {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    #navbar ul li {
+        padding: 0;
+    }
+
+    #navbar ul li a {
+        padding: 10px;
+    }
+
+    .main-section {
+        margin-left: 0;
+    }
+}
+
+
+** end of undefined **
+
